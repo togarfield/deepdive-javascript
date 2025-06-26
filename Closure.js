@@ -13,6 +13,9 @@ function createCounter(initialValue = 0) {
     getValue: function () {
       return count;
     },
+    resetCounter: function () {
+      return initialValue;
+    },
   };
 }
 
@@ -23,3 +26,4 @@ console.log("increment", counter.increment());
 console.log("increment", counter.increment());
 console.log("decrement", counter.decrement());
 console.log("getvalue", counter.getValue());
+console.log("resetCounter", counter.resetCounter());
